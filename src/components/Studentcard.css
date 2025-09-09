@@ -1,0 +1,197 @@
+.student-card {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 18px rgba(12, 58, 84, 0.08);
+  padding: 24px 32px;
+  margin: 20px 0;
+  gap: 24px;
+  max-width: 700px;
+}
+
+.student-avatar img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid #2563eb;
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.3);
+  object-fit: cover;
+}
+
+.student-info {
+  flex-grow: 1;
+}
+
+.student-name {
+  margin: 0;
+  font-weight: 800;
+  font-size: 24px;
+  color: #1e293b;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 4px 14px;
+  margin-left: 12px;
+  border-radius: 12px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: capitalize;
+  vertical-align: middle;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.status-active {
+  background: #22c55e;
+  box-shadow: 0 0 12px #22c55e;
+}
+
+.status-inactive {
+  background: #f59e42;
+  box-shadow: 0 0 12px #f59e42;
+}
+
+.student-details {
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  font-size: 16px;
+  color: #475569;
+  font-weight: 500;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.student-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.btn-view {
+  background-color: #e0e7ff;
+  color: #3730a3;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+  box-shadow: 0 0 5px #c7d2fe;
+  transition: background-color 0.2s ease;
+}
+
+.btn-view:hover {
+  background-color: #c7d2fe;
+}
+
+.btn-edit, .btn-delete {
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+.btn-edit {
+  background-color: #facc15;
+  color: #b45309;
+  box-shadow: 0 0 12px #fbbf24;
+}
+
+.btn-edit:hover {
+  transform: scale(1.1);
+}
+
+.btn-delete {
+  background-color: #fee2e2;
+  color: #b91c1c;
+  box-shadow: 0 0 12px #f87171;
+}
+
+.btn-delete:hover {
+  transform: scale(1.1);
+}
+
+/* Optional: icon placeholders */
+.icon-mail::before { content: "📧"; }
+.icon-book-open::before { content: "📚"; }
+.icon-calendar::before { content: "📅"; }
+.icon-edit::before { content: "✏️"; }
+.icon-trash::before { content: "🗑️"; }
+
+.btn-edit,
+.btn-delete {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 14px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  box-shadow: 0 0 8px transparent;
+}
+
+/* Edit button styles */
+.btn-edit {
+  background-color: #facc15; /* soft yellow */
+  color: #b45309; /* dark gold */
+  box-shadow: 0 0 12px #fbbf24;
+}
+
+.btn-edit:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #fbbf24;
+}
+
+/* Delete button styles */
+.btn-delete {
+  background-color: #fee2e2; /* soft red/pink */
+  color: #b91c1c; /* dark red */
+  box-shadow: 0 0 12px #f87171;
+}
+
+.btn-delete:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #f87171;
+}
+
+/* Optional: size SVG icons inside buttons */
+.btn-edit svg,
+.btn-delete svg {
+  width: 20px;
+  height: 20px;
+  /* ensure icon colors come from fill or stroke attributes */
+}
+.btn-view {
+  background-color: #2563eb; /* strong blue */
+  color: #ffffff; /* white text */
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 12px 28px;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(37, 99, 235, 0.5);
+  transition: background-color 0.25s ease, box-shadow 0.25s ease;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.btn-view:hover {
+  background-color: #1d4ed8; /* darker blue on hover */
+  box-shadow: 0 8px 22px rgba(29, 78, 216, 0.7);
+}
