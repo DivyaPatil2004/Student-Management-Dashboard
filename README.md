@@ -18,7 +18,7 @@ The Student Management Dashboard is a web application designed to manage student
 
 
 ## Installation and Setup
-1. Clone the repository: git clone https://github.com/yourusername/student-management-dashboard.git
+1. Clone the repository: git clone https://github.com/DivyaPatil2004/student-management-dashboard.git
 2. Navigate to the project directory: cd student-management-dashboard
-3. Install dependencies: npm install
+3. Install all dependencies: npm install
 4. Start Application : npm run dev
